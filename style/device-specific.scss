@@ -1,0 +1,46 @@
+/* =Device Specific Media Queries / Responsive Styles
+----------------------------------------------- */
+/*
+* iPad landscape specific styles
+*/
+@media only screen and (width : 1024px) and (orientation : landscape) {}
+
+/*
+* Droid landscape specific styles
+*/
+@media only screen and (width : 854px) and (orientation : landscape) {}
+
+/*
+* iPad portrait specific styles
+*/
+@media only screen and (width : 768px) and (orientation : portrait) {}
+
+/*
+* iPhone landscape, Droid portrait, Torch landscape specific styles
+*
+* CURRENTLY NOT APPLYING TO iPHONE IN LANDSCAPE
+*/
+@media only screen and (width : 480px) and (orientation : landscape) {
+	.hfeed {
+		width: 100%;
+	}
+}
+
+/*
+* Torch portrait specific styles
+*/
+@media only screen and (width : 360px) and (orientation : portrait) {}
+
+/*
+* iPhone portrait, Blackberry Curve specific styles
+*/
+@media only screen and (width : 320px) and (orientation : portrait) {
+	.hfeed {
+		width: 100%;
+	}
+}
+
+/*
+* iPhone 4 specific styles (retina display)
+*/
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {}

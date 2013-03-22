@@ -1,0 +1,7 @@
+# To-Do List:
+
+- space the menu dropdown toggle nicely (less margin-top, more margin-bottom)
+
+- learn how to use cookies to remeber theme inversion on links
+
+- labs (wp plugin?)

@@ -1,0 +1,72 @@
+/*
+* MOBILE SPECIFIC STYLES
+*/
+@media only screen and (max-width : 767px) {
+
+	.hfeed { //page container
+		width: 90%;
+		padding: 20px;
+		margin: 0 auto;
+		text-align: justify
+	}
+
+	.colour-toggle {
+		display: none;
+		top: 180px;
+		right: 80px;
+		img {
+			height: 50px;
+		}
+	}
+
+	.navigation-main ul {
+		display: none;
+	}
+
+	.menu-toggle,
+	.main-small-navigation ul.nav-menu.toggled-on {
+		display: block;
+	}
+
+	/* =Content
+	----------------------------------------------- */
+
+	.entry-content,
+	.entry-summary {
+		margin: 1.5em 0 0;
+		h2 {
+			font-size: 1.5em;
+		}
+
+		h3 {
+			font-size: 1.3em;
+		}
+	}
+
+	.entry-header .entry-title {
+		font-size: 2.0em;
+		margin-bottom: 70px;
+	}
+
+	/* Text elements */
+
+	blockquote:not(.twitter-tweet) {
+		margin: 0 0.5em;
+		padding: 0 1em;
+	}
+
+	pre {
+		font-size: 15px;
+		font-size: 1.5rem;
+		line-height: 1.6;
+		margin-bottom: 1.6em;
+		width: 100%;
+	}
+	code, kbd, tt, var {
+		font-size: 15px;
+		border-radius: 15px;
+		padding: 0.9em;
+		padding-top: 0.7em;
+		padding-bottom: 1.7em;
+	}
+}
