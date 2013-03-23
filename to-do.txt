@@ -2,6 +2,10 @@
 
 - space the menu dropdown toggle nicely (less margin-top, more margin-bottom)
 
-- learn how to use cookies to remeber theme inversion on links
+- learn how to use cookies to remember theme inversion on links
 
 - labs (wp plugin?)
+
+- style/test audio and video
+
+- the divs in the line breaks, make them fade right

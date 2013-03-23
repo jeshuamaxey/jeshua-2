@@ -13,6 +13,7 @@
 
 	button.onclick = function() {
 		toggleThemeSwitch();
+		//consider changing nav-menu to menu to hide div wrapper of ul
 		if ( -1 == menu.className.indexOf( 'nav-menu' ) )
 			menu.className = 'nav-menu';
 
