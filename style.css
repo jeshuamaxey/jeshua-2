@@ -781,10 +781,6 @@ article.comment {
     margin-bottom: 50px; }
 
   /* Text elements */
-  .searchform input#s {
-    padding-left: 10px;
-    padding-bottom: 8px; }
-
   blockquote:not(.twitter-tweet) {
     margin: 0 0.5em;
     padding: 0 1em; }
@@ -849,11 +845,7 @@ article.comment {
     border-radius: 15px;
     padding: 0.9em;
     padding-top: 0.7em;
-    padding-bottom: 1.7em; }
-
-  .searchform input#s {
-    padding-left: 10px;
-    padding-bottom: 8px; } }
+    padding-bottom: 1.7em; } }
 /* =Device Specific Media Queries / Responsive Styles
 ----------------------------------------------- */
 /*
