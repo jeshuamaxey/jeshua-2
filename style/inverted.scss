@@ -110,6 +110,18 @@ body.inverted {
 	/* =Input Elements
 	----------------------------------------------- */
 
+	button,
+	html input[type="button"],
+	input[type="reset"],
+	input[type="submit"] {
+		-webkit-box-shadow: inset 0 0.5px 0 $offwhite, inset 0 0px 6px $offwhite, inset 0 0px 0px $near-black;
+		-moz-box-shadow:    inset 0 0.5px 0 $offwhite, inset 0 0px 6px $offwhite, inset 0 0px 0px $near-black;
+		box-shadow:         inset 0 0.5px 0 $offwhite, inset 0 0px 6px $offwhite, inset 0 0px 0px $near-black;
+
+		background-color: $near-black;
+		color: $offwhite;
+	}
+
 	input[type="text"],
 	input[type="email"],
 	input[type="password"],
