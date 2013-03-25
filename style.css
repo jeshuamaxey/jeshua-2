@@ -667,6 +667,10 @@ object {
 .widget_search form {
   text-align: center; }
 
+/* tag cloud widget */
+.widget_tag_cloud {
+  text-align: center; }
+
 /* =Infinite Scroll
 ----------------------------------------------- */
 /* Globally hidden elements when Infinite Scroll is supported and in use. */

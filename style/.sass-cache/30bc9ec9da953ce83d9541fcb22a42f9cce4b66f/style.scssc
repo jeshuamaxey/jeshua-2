@@ -1,7 +1,7 @@
 3.2.7 (Media Mark)
-e8ffc10d8c47136126c8362cc838dce800292b2c
+2f0e8f8bdac96bbd2ae2aa06c33c224845c29cf8
 o:Sass::Tree::RootNode
-:@template"l8/*
+:@template"¯8/*
 Theme Name: jeshua-2.0
 Theme URI: http://underscores.me/
 Author: Underscores.me
@@ -692,6 +692,11 @@ object {
 	}
 }
 
+/* tag cloud widget */
+.widget_tag_cloud {
+	text-align: center;
+}
+
 /* =Infinite Scroll
 ----------------------------------------------- */
 
@@ -716,7 +721,7 @@ object {
 /* =Inverted Styles
 ----------------------------------------------- */
 @import "inverted";
-:@children[~o:Sass::Tree::CommentNode
+:@children[€o:Sass::Tree::CommentNode
 :
 @type:normal;[ :@value["£/*
 Theme Name: jeshua-2.0
@@ -1546,26 +1551,29 @@ class;[""navigation";5" ;iŒ;B0;60;C"*=;5@Û;7o;8;9{ ;:0;iŒo;3
 ;1[o;4	;["	form;5" ;i¯;60;5@—;7o;8;9{ ;:0;i¯;5@—;i¯;!T;@;.[".widget_search;i¨;/o;0;1[o;2;1[o;3
 ;1[o;<;["widget_search;5" ;i¨;5@¥;7o;8;9{ ;:0;i¨;5@¥;i¨;!To;
 ;	;
+;[ ;["/* tag cloud widget */;@;i´o;-;i ;[o;;i ;["text-align;[ ;o;;	;;"center;@;@;i¶;;;@;.[".widget_tag_cloud;iµ;/o;0;1[o;2;1[o;3
+;1[o;<;["widget_tag_cloud;5" ;iµ;5@¿;7o;8;9{ ;:0;iµ;5@¿;iµ;!To;
+;	;
 ;[ ;["K/* =Infinite Scroll
------------------------------------------------ */;@;i´o;
+----------------------------------------------- */;@;i¹o;
 ;	;
-;[ ;["Q/* Globally hidden elements when Infinite Scroll is supported and in use. */;@;i·o;-;i ;[o;
+;[ ;["Q/* Globally hidden elements when Infinite Scroll is supported and in use. */;@;i¼o;-;i ;[o;
 ;	;
-;[ ;["//* Theme Footer (when set to scrolling) */;@;i¹o;;i ;["display;[ ;o;;	;;"	none;@;@;iº;;;@;.["T.infinite-scroll .navigation-paging, 
-.infinite-scroll.neverending .site-footer;i¹;/o;0;1[o;2;1[o;3
-;1[o;<;["infinite-scroll;5" ;i¹;5@Ç;7o;8;9{ ;:0;i¹o;3
-;1[o;<;["navigation-paging;5@Ç;i¹;5@Ç;7o;8;9{ ;:0;i¹o;2;1["
+;[ ;["//* Theme Footer (when set to scrolling) */;@;i¾o;;i ;["display;[ ;o;;	;;"	none;@;@;i¿;;;@;.["T.infinite-scroll .navigation-paging, 
+.infinite-scroll.neverending .site-footer;i¾;/o;0;1[o;2;1[o;3
+;1[o;<;["infinite-scroll;5" ;i¾;5@á;7o;8;9{ ;:0;i¾o;3
+;1[o;<;["navigation-paging;5@á;i¾;5@á;7o;8;9{ ;:0;i¾o;2;1["
 o;3
-;1[o;<;["infinite-scroll;5@Ç;i¹o;<;["neverending;5@Ç;i¹;5@Ç;7o;8;9{ ;:0;i¹o;3
-;1[o;<;["site-footer;5@Ç;i¹;5@Ç;7o;8;9{ ;:0;i¹;5@Ç;i¹;!To;
+;1[o;<;["infinite-scroll;5@á;i¾o;<;["neverending;5@á;i¾;5@á;7o;8;9{ ;:0;i¾o;3
+;1[o;<;["site-footer;5@á;i¾;5@á;7o;8;9{ ;:0;i¾;5@á;i¾;!To;
 ;	;
-;[ ;["}/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before */;@;i½o;-;i ;[o;;i ;["display;[ ;o;;	;;"
-block;@;@;i¿;;;@;.["+.infinity-end.neverending .site-footer;i¾;/o;0;1[o;2;1[o;3
-;1[o;<;["infinity-end;5" ;i¾o;<;["neverending;5@ü;i¾;5@ü;7o;8;9{ ;:0;i¾o;3
-;1[o;<;["site-footer;5@ü;i¾;5@ü;7o;8;9{ ;:0;i¾;5@ü;i¾;!To;
+;[ ;["}/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before */;@;iÂo;-;i ;[o;;i ;["display;[ ;o;;	;;"
+block;@;@;iÄ;;;@;.["+.infinity-end.neverending .site-footer;iÃ;/o;0;1[o;2;1[o;3
+;1[o;<;["infinity-end;5" ;iÃo;<;["neverending;5@;iÃ;5@;7o;8;9{ ;:0;iÃo;3
+;1[o;<;["site-footer;5@;iÃ;5@;7o;8;9{ ;:0;iÃ;5@;iÃ;!To;
 ;	;
 ;[ ;["e/* =Media Queries / Responsive Styles Imports
------------------------------------------------ */;@;iÂo;;0;0;[ ;@;"desktop;iÄo;;0;0;[ ;@;"tablet;iÅo;;0;0;[ ;@;"mobile;iÆo;;0;0;[ ;@;"device-specific;iÇo;
+----------------------------------------------- */;@;iÇo;;0;0;[ ;@;"desktop;iÉo;;0;0;[ ;@;"tablet;iÊo;;0;0;[ ;@;"mobile;iËo;;0;0;[ ;@;"device-specific;iÌo;
 ;	;
 ;[ ;["K/* =Inverted Styles
------------------------------------------------ */;@;iÉo;;0;0;[ ;@;"inverted;iË;@;i;!T
+----------------------------------------------- */;@;iÎo;;0;0;[ ;@;"inverted;iÐ;@;i;!T
