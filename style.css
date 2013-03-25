@@ -858,13 +858,35 @@ article.comment {
 * iPad portrait specific styles
 */
 /*
-* iPhone landscape, Droid portrait, Torch landscape specific styles
+* iPhone4 landscape, Droid portrait, Torch landscape specific styles
 *
 * CURRENTLY NOT APPLYING TO iPHONE IN LANDSCAPE
 */
 @media only screen and (width: 480px) and (orientation: landscape) {
   .hfeed {
-    width: 100%; } }
+    width: 100%; }
+
+  /*
+  * safari on iOS rounds the corners of search bar - padding requires adjusting
+  */
+  .searchform input#s {
+    padding-left: 10px;
+    padding-bottom: 8px; } }
+/*
+* iPhone5 landscape specific styles
+*
+* CURRENTLY NOT APPLYING TO iPHONE IN LANDSCAPE
+*/
+@media only screen and (max-device-width: 568px) and (orientation: landscape) {
+  .hfeed {
+    width: 100%; }
+
+  /*
+  * safari on iOS rounds the corners of search bar - padding requires adjusting
+  */
+  .searchform input#s {
+    padding-left: 10px;
+    padding-bottom: 8px; } }
 /*
 * Torch portrait specific styles
 */
@@ -873,7 +895,14 @@ article.comment {
 */
 @media only screen and (width: 320px) and (orientation: portrait) {
   .hfeed {
-    width: 100%; } }
+    width: 100%; }
+
+  /*
+  * safari on iOS rounds the corners of search bar - padding requires adjusting
+  */
+  .searchform input#s {
+    padding-left: 10px;
+    padding-bottom: 8px; } }
 /*
 * iPhone 4 specific styles (retina display)
 */
