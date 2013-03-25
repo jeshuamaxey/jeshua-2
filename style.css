@@ -537,10 +537,14 @@ a {
 .entry-content,
 .entry-summary {
   margin: 1.5em 0 0; }
-  .entry-content h2, .entry-content h3,
-  .entry-summary h2,
+  .entry-content h2,
+  .entry-summary h2 {
+    text-decoration: underline;
+    font-size: 1.5em; }
+  .entry-content h3,
   .entry-summary h3 {
-    text-decoration: underline; }
+    text-decoration: underline;
+    font-size: 1.3em; }
 
 .entry-header {
   text-align: center; }
@@ -647,6 +651,31 @@ object {
 
 /* =Comments
 ----------------------------------------------- */
+.comments-title {
+  text-align: center;
+  font-size: 1.3em;
+  margin-bottom: 1em; }
+  .comments-title span {
+    font-size: 1.5em;
+    display: block; }
+
+ol.comment-list {
+  margin: 0;
+  list-style: none; }
+  ol.comment-list li.depth-1 article.comment {
+    border-left: solid 3px; }
+  ol.comment-list li.depth-2 article.comment, ol.comment-list li.depth-3 article.comment, ol.comment-list li.depth-4 article.comment, ol.comment-list li.depth-5 article.comment {
+    border-left: solid 1px; }
+  ol.comment-list li ul {
+    list-style: none; }
+
+cite.fn {
+  font-size: 1.7em; }
+
+article.comment {
+  margin-bottom: 2em;
+  padding-left: 1em; }
+
 .comment-content a {
   word-wrap: break-word; }
 
@@ -704,16 +733,6 @@ object {
 
   /* =Content
   ----------------------------------------------- */
-  .entry-content,
-  .entry-summary {
-    margin: 1.5em 0 0; }
-    .entry-content h2,
-    .entry-summary h2 {
-      font-size: 1.5em; }
-    .entry-content h3,
-    .entry-summary h3 {
-      font-size: 1.3em; }
-
   .entry-header .entry-title {
     font-size: 2.0em;
     margin-bottom: 50px; }
@@ -755,16 +774,6 @@ object {
 
   /* =Content
   ----------------------------------------------- */
-  .entry-content,
-  .entry-summary {
-    margin: 1.5em 0 0; }
-    .entry-content h2,
-    .entry-summary h2 {
-      font-size: 1.5em; }
-    .entry-content h3,
-    .entry-summary h3 {
-      font-size: 1.3em; }
-
   .entry-header .entry-title {
     font-size: 2.0em;
     margin-bottom: 50px; }
@@ -813,16 +822,6 @@ object {
 
   /* =Content
   ----------------------------------------------- */
-  .entry-content,
-  .entry-summary {
-    margin: 1.5em 0 0; }
-    .entry-content h2,
-    .entry-summary h2 {
-      font-size: 1.5em; }
-    .entry-content h3,
-    .entry-summary h3 {
-      font-size: 1.3em; }
-
   .entry-header .entry-title {
     font-size: 2.0em;
     margin-bottom: 70px; }

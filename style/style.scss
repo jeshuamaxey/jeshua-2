@@ -522,13 +522,18 @@ a {
 	display: inline;
 }
 .entry-content,
-.entry-summary {
-	margin: 1.5em 0 0;
+	.entry-summary {
+		margin: 1.5em 0 0;
+		h2 {
+			text-decoration: underline;
+			font-size: 1.5em;
+		}
 
-	h2, h3 {
-		text-decoration: underline;
+		h3 {
+			text-decoration: underline;
+			font-size: 1.3em;
+		}
 	}
-}
 
 .entry-header {
 	text-align: center;
@@ -657,10 +662,49 @@ object {
 
 /* =Comments
 ----------------------------------------------- */
+.comments-title {
+	text-align: center;
+	font-size: 1.3em;
+	margin-bottom: 1em;
+	span {
+		font-size: 1.5em;
+		display: block;
+	}
+}
+
+ol.comment-list {
+	margin: 0;
+	list-style: none;
+	li {
+		&.depth-1 {
+			article.comment {
+				border-left: solid 3px;
+			}
+		}
+		&.depth-2, &.depth-3, &.depth-4, &.depth-5, {
+			article.comment {
+				border-left: solid 1px;
+			}
+		}
+		ul {
+			list-style: none;
+		}
+	}
+}
+
+cite.fn {
+	font-size: 1.7em;
+}
+
+article.comment {
+	margin-bottom: 2em;
+	padding-left: 1em;
+}
 
 .comment-content a {
 	word-wrap: break-word;
 }
+
 .bypostauthor {
 }
 
