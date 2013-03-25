@@ -781,6 +781,10 @@ article.comment {
     margin-bottom: 50px; }
 
   /* Text elements */
+  .searchform input#s {
+    padding-left: 10px;
+    padding-bottom: 8px; }
+
   blockquote:not(.twitter-tweet) {
     margin: 0 0.5em;
     padding: 0 1em; }
@@ -845,7 +849,11 @@ article.comment {
     border-radius: 15px;
     padding: 0.9em;
     padding-top: 0.7em;
-    padding-bottom: 1.7em; } }
+    padding-bottom: 1.7em; }
+
+  .searchform input#s {
+    padding-left: 10px;
+    padding-bottom: 8px; } }
 /* =Device Specific Media Queries / Responsive Styles
 ----------------------------------------------- */
 /*
@@ -859,8 +867,6 @@ article.comment {
 */
 /*
 * iPhone4 landscape, Droid portrait, Torch landscape specific styles
-*
-* CURRENTLY NOT APPLYING TO iPHONE IN LANDSCAPE
 */
 @media only screen and (width: 480px) and (orientation: landscape) {
   .hfeed {
@@ -874,8 +880,6 @@ article.comment {
     padding-bottom: 8px; } }
 /*
 * iPhone5 landscape specific styles
-*
-* CURRENTLY NOT APPLYING TO iPHONE IN LANDSCAPE
 */
 @media only screen and (max-device-width: 568px) and (orientation: landscape) {
   .hfeed {

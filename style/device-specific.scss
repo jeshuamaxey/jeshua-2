@@ -17,8 +17,6 @@
 
 /*
 * iPhone4 landscape, Droid portrait, Torch landscape specific styles
-*
-* CURRENTLY NOT APPLYING TO iPHONE IN LANDSCAPE
 */
 @media only screen and (width : 480px) and (orientation : landscape) {
 	.hfeed {
@@ -35,8 +33,6 @@
 
 /*
 * iPhone5 landscape specific styles
-*
-* CURRENTLY NOT APPLYING TO iPHONE IN LANDSCAPE
 */
 @media only screen and (max-device-width : 568px) and (orientation : landscape) {
 	.hfeed {
