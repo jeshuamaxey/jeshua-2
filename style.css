@@ -162,6 +162,13 @@ hr {
 p {
   margin-bottom: 1.5em; }
 
+.amp {
+  font-family: Baskerville, "Goudy Old Style", "Palatino", "Book Antiqua", "Warnock Pro", serif;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 1.1em;
+  line-height: 1em; }
+
 ul, ol {
   margin: 0 0 1.5em 3em; }
 
