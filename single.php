@@ -15,6 +15,8 @@ get_header(); ?>
 
 			<?php get_template_part( 'content', 'single' ); ?>
 
+			<?php echo "<div class='divide single'><span class='divide-char'>&sect;</span></div>" ?>
+
 			<?php jeshua_2_0_content_nav( 'nav-below' ); ?>
 
 			<?php
