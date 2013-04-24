@@ -4,7 +4,9 @@
 @media only screen and (min-width : 1024px) {
 
 	.hfeed { //page container
-		width: 70%;
+//width is 90% of 1023px (the width at which next media
+//query kicks in - makes for seamless resizing)
+		width: 921px;
 		padding: 20px;
 		margin: 0 auto;
 	}
