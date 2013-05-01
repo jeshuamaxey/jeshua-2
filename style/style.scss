@@ -85,9 +85,33 @@ h1,h2,h3,h4,h5,h6 {
 	}
 }
 
+/* Site title*/
+/* backup title CSS */
 .site-title {
 	text-align: center;
 	font-size: 3.3em;
+	letter-spacing: 0.1em;
+
+	a, a:visited, a:active {
+		color: $offwhite;
+		font-weight: normal;
+		font-style: italic;
+		text-decoration: none;
+		padding: 0px 10px 6px 10px;
+	}
+
+	a:hover {
+		color: $offwhite;
+		text-shadow:none;
+		text-decoration: none;
+		border-bottom: solid 1px $offwhite;	
+	}
+}
+/* ideal title CSS * /
+.textshadow .site-title {
+	text-align: center;
+	font-size: 3.3em;
+	font-style: normal;
 	letter-spacing: 0.1em;
 
 	a, a:visited, a:active {
@@ -103,6 +127,7 @@ h1,h2,h3,h4,h5,h6 {
 		border-bottom: solid 1px $offwhite;	
 	}
 }
+*/
 
 /* page dividers */
 
@@ -342,7 +367,27 @@ textarea {
 }
 
 /* Links */
+/* backup link CSS */
 a {
+	color: $offwhite;
+	font-weight: bold;
+	font-style: italic;
+	text-decoration: none;
+
+	&:visited {
+
+	}
+	&:hover,
+	&:focus,
+	&:active {
+		color: $offwhite;
+		text-shadow: none;
+		text-decoration: underline;
+	}
+}
+
+/* Ideal link CSS * /
+.textshadow a {
 	@include text-blur(2px, $offwhite);
 	text-decoration: none;
 
@@ -357,6 +402,7 @@ a {
 		text-decoration: underline;
 	}
 }
+*/
 
 /* Alignment */
 .alignleft {
@@ -463,6 +509,8 @@ a {
 			li {
 			}
 			//these nests don't seem to be working
+			//because I need to add the & (ampersand)
+			//before the : etc. Will update this soon
 			:hover > a {
 				color: red;
 			}
@@ -480,9 +528,47 @@ a {
 	}
 
 	a {
+		color: $offwhite;
+		font-weight: bold;
+		font-style: italic;
+		text-decoration: none;
+
+		&:visited {
+
+		}
+		&:hover,
+		&:focus,
+		&:active {
+			color: $offwhite;
+			text-shadow: none;
+			text-decoration: underline;
+		}
+	}
+
+	.textshadow a {
 		@include text-blur(2px, $offwhite);
 		text-decoration: none;
 	}
+
+	/*
+
+.textshadow a {
+	@include text-blur(2px, $offwhite);
+	text-decoration: none;
+
+	&:visited {
+		@include text-blur(2px, $offwhite);
+	}
+	&:hover,
+	&:focus,
+	&:active {
+		color: $offwhite;
+		text-shadow: none;
+		text-decoration: underline;
+	}
+}
+
+	*/
 
 //to be nested
 	li:hover > a {

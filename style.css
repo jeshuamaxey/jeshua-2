@@ -136,13 +136,16 @@ h1, h2, h3, h4, h5, h6 {
       -ms-transform: rotate(180deg);
       transform: rotate(180deg); }
 
+/* Site title*/
+/* backup title CSS */
 .site-title {
   text-align: center;
   font-size: 3.3em;
   letter-spacing: 0.1em; }
   .site-title a, .site-title a:visited, .site-title a:active {
-    color: transparent;
-    text-shadow: 0px 0px 3px #ffffe6;
+    color: #ffffe6;
+    font-weight: normal;
+    font-style: italic;
     text-decoration: none;
     padding: 0px 10px 6px 10px; }
   .site-title a:hover {
@@ -151,6 +154,27 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
     border-bottom: solid 1px #ffffe6; }
 
+/* ideal title CSS * /
+.textshadow .site-title {
+	text-align: center;
+	font-size: 3.3em;
+	font-style: normal;
+	letter-spacing: 0.1em;
+
+	a, a:visited, a:active {
+		@include text-blur(3px, $offwhite);
+		text-decoration: none;
+		padding: 0px 10px 6px 10px;
+	}
+
+	a:hover {
+		color: $offwhite;
+		text-shadow:none;
+		text-decoration: none;
+		border-bottom: solid 1px $offwhite;	
+	}
+}
+*/
 /* page dividers */
 hr {
   width: 60%;
@@ -393,18 +417,34 @@ textarea {
   width: 98%; }
 
 /* Links */
+/* backup link CSS */
 a {
-  color: transparent;
-  text-shadow: 0px 0px 2px #ffffe6;
+  color: #ffffe6;
+  font-weight: bold;
+  font-style: italic;
   text-decoration: none; }
-  a:visited {
-    color: transparent;
-    text-shadow: 0px 0px 2px #ffffe6; }
   a:hover, a:focus, a:active {
     color: #ffffe6;
     text-shadow: none;
     text-decoration: underline; }
 
+/* Ideal link CSS * /
+.textshadow a {
+	@include text-blur(2px, $offwhite);
+	text-decoration: none;
+
+	&:visited {
+		@include text-blur(2px, $offwhite);
+	}
+	&:hover,
+	&:focus,
+	&:active {
+		color: $offwhite;
+		text-shadow: none;
+		text-decoration: underline;
+	}
+}
+*/
 /* Alignment */
 .alignleft {
   display: inline;
@@ -469,6 +509,25 @@ a {
   display: block;
   float: left;
   width: 100%;
+  	/*
+  
+  .textshadow a {
+  	@include text-blur(2px, $offwhite);
+  	text-decoration: none;
+  
+  	&:visited {
+  		@include text-blur(2px, $offwhite);
+  	}
+  	&:hover,
+  	&:focus,
+  	&:active {
+  		color: $offwhite;
+  		text-shadow: none;
+  		text-decoration: underline;
+  	}
+  }
+  
+  	*/
   /*
   *	tryed to nest these but doesn't seem to be working
   *	uncomment if you get round to requiring a menu this complex
@@ -511,6 +570,15 @@ a {
     *zoom: 1;
     /*IE7*/ }
   .navigation-main a {
+    color: #ffffe6;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: none; }
+    .navigation-main a:hover, .navigation-main a:focus, .navigation-main a:active {
+      color: #ffffe6;
+      text-shadow: none;
+      text-decoration: underline; }
+  .navigation-main .textshadow a {
     color: transparent;
     text-shadow: 0px 0px 2px #ffffe6;
     text-decoration: none; }
