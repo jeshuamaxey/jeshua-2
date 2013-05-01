@@ -107,7 +107,7 @@ h1,h2,h3,h4,h5,h6 {
 		border-bottom: solid 1px $offwhite;	
 	}
 }
-/* ideal title CSS * /
+/* ideal title CSS */
 .textshadow .site-title {
 	text-align: center;
 	font-size: 3.3em;
@@ -127,7 +127,7 @@ h1,h2,h3,h4,h5,h6 {
 		border-bottom: solid 1px $offwhite;	
 	}
 }
-*/
+
 
 /* page dividers */
 
@@ -386,10 +386,11 @@ a {
 	}
 }
 
-/* Ideal link CSS * /
+/* Ideal link CSS */
 .textshadow a {
 	@include text-blur(2px, $offwhite);
 	text-decoration: none;
+	font-style: normal;
 
 	&:visited {
 		@include text-blur(2px, $offwhite);
@@ -402,7 +403,6 @@ a {
 		text-decoration: underline;
 	}
 }
-*/
 
 /* Alignment */
 .alignleft {
@@ -466,7 +466,7 @@ a {
 }
 
 
-/* =Menu
+/* =Menu (backup CSS)
 ----------------------------------------------- */
 
 .navigation-main {
@@ -545,16 +545,99 @@ a {
 		}
 	}
 
-	.textshadow a {
-		@include text-blur(2px, $offwhite);
-		text-decoration: none;
+//to be nested
+	li:hover > a {
+		color: $offwhite;
+		text-shadow: none;
+		text-decoration: underline;
 	}
 
-	/*
+/*
+*	tryed to nest these but doesn't seem to be working
+*	uncomment if you get round to requiring a menu this complex
+*
+	ul ul :hover > a {
+	}
+	ul ul a:hover {
+	}
+*/	ul li:hover > ul {
+		display: block;
+	}
+//end to be nested
 
-.textshadow a {
+	li.current_page_item a,
+	li.current-menu-item a {
+		text-shadow: none;
+		color: $offwhite;
+	}
+} //end .navigation-main backup
+
+/* =Menu (ideal CSS)
+----------------------------------------------- */
+
+.textshadow .navigation-main {
+	clear: both;
+	display: block;
+	float: left;
+	width: 100%;
+
+	.menu {
+		margin-bottom: 20px;
+	}
+
+	ul {
+
+//consider moving the below to size specific scss file
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+		text-align:center;
+//end consider
+
+		ul {
+			-webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+			-moz-box-shadow:    0 3px 3px rgba(0, 0, 0, 0.2);
+			box-shadow:         0 3px 3px rgba(0, 0, 0, 0.2);
+			display: none;
+			float: left;
+			position: absolute;
+				top: 1.5em;
+				left: 0;
+			z-index: 99999;
+			
+			ul {
+				left: 100%;
+				top: 0;
+			}
+			a {
+				width: 200px;
+			}
+			li {
+			}
+			//these nests don't seem to be working
+			//because I need to add the & (ampersand)
+			//before the : etc. Will update this soon
+			:hover > a {
+				color: red;
+			}
+			a:hover {
+				color: red;
+			}
+			//end not working
+		}
+	}
+	
+	li {
+		display:inline-block;
+		*display:inline; /*IE7*/
+		*zoom:1; /*IE7*/
+	}
+
+	a {
 	@include text-blur(2px, $offwhite);
 	text-decoration: none;
+	text-decoration: none;
+	font-style: normal;
 
 	&:visited {
 		@include text-blur(2px, $offwhite);
@@ -567,8 +650,6 @@ a {
 		text-decoration: underline;
 	}
 }
-
-	*/
 
 //to be nested
 	li:hover > a {
@@ -595,7 +676,9 @@ a {
 		text-shadow: none;
 		color: $offwhite;
 	}
-} //end .navigation-main
+} //end .navigation-main ideal
+
+
 
 /* Small menu */
 .menu-toggle {
