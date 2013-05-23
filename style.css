@@ -136,16 +136,36 @@ h1, h2, h3, h4, h5, h6 {
       -ms-transform: rotate(180deg);
       transform: rotate(180deg); }
 
+/* Site title*/
+/* backup title CSS */
 .site-title {
   text-align: center;
   font-size: 3.3em;
   letter-spacing: 0.1em; }
   .site-title a, .site-title a:visited, .site-title a:active {
+    color: #ffffe6;
+    font-weight: normal;
+    font-style: italic;
+    text-decoration: none;
+    padding: 0px 10px 6px 10px; }
+  .site-title a:hover {
+    color: #ffffe6;
+    text-shadow: none;
+    text-decoration: none;
+    border-bottom: solid 1px #ffffe6; }
+
+/* ideal title CSS */
+.textshadow .site-title {
+  text-align: center;
+  font-size: 3.3em;
+  font-style: normal;
+  letter-spacing: 0.1em; }
+  .textshadow .site-title a, .textshadow .site-title a:visited, .textshadow .site-title a:active {
     color: transparent;
     text-shadow: 0px 0px 3px #ffffe6;
     text-decoration: none;
     padding: 0px 10px 6px 10px; }
-  .site-title a:hover {
+  .textshadow .site-title a:hover {
     color: #ffffe6;
     text-shadow: none;
     text-decoration: none;
@@ -393,14 +413,27 @@ textarea {
   width: 98%; }
 
 /* Links */
+/* backup link CSS */
 a {
+  color: #ffffe6;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: none; }
+  a:hover, a:focus, a:active {
+    color: #ffffe6;
+    text-shadow: none;
+    text-decoration: underline; }
+
+/* Ideal link CSS */
+.textshadow a {
   color: transparent;
   text-shadow: 0px 0px 2px #ffffe6;
-  text-decoration: none; }
-  a:visited {
+  text-decoration: none;
+  font-style: normal; }
+  .textshadow a:visited {
     color: transparent;
     text-shadow: 0px 0px 2px #ffffe6; }
-  a:hover, a:focus, a:active {
+  .textshadow a:hover, .textshadow a:focus, .textshadow a:active {
     color: #ffffe6;
     text-shadow: none;
     text-decoration: underline; }
@@ -462,7 +495,7 @@ a {
 [class*="site"]:after {
   clear: both; }
 
-/* =Menu
+/* =Menu (backup CSS)
 ----------------------------------------------- */
 .navigation-main {
   clear: both;
@@ -511,9 +544,14 @@ a {
     *zoom: 1;
     /*IE7*/ }
   .navigation-main a {
-    color: transparent;
-    text-shadow: 0px 0px 2px #ffffe6;
+    color: #ffffe6;
+    font-weight: bold;
+    font-style: italic;
     text-decoration: none; }
+    .navigation-main a:hover, .navigation-main a:focus, .navigation-main a:active {
+      color: #ffffe6;
+      text-shadow: none;
+      text-decoration: underline; }
   .navigation-main li:hover > a {
     color: #ffffe6;
     text-shadow: none;
@@ -522,6 +560,78 @@ a {
     display: block; }
   .navigation-main li.current_page_item a,
   .navigation-main li.current-menu-item a {
+    text-shadow: none;
+    color: #ffffe6; }
+
+/* =Menu (ideal CSS)
+----------------------------------------------- */
+.textshadow .navigation-main {
+  clear: both;
+  display: block;
+  float: left;
+  width: 100%;
+  /*
+  *	tryed to nest these but doesn't seem to be working
+  *	uncomment if you get round to requiring a menu this complex
+  *
+  	ul ul :hover > a {
+  	}
+  	ul ul a:hover {
+  	}
+  */ }
+  .textshadow .navigation-main .menu {
+    margin-bottom: 20px; }
+  .textshadow .navigation-main ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    text-align: center; }
+    .textshadow .navigation-main ul ul {
+      -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+      display: none;
+      float: left;
+      position: absolute;
+      top: 1.5em;
+      left: 0;
+      z-index: 99999; }
+      .textshadow .navigation-main ul ul ul {
+        left: 100%;
+        top: 0; }
+      .textshadow .navigation-main ul ul a {
+        width: 200px; }
+      .textshadow .navigation-main ul ul :hover > a {
+        color: red; }
+      .textshadow .navigation-main ul ul a:hover {
+        color: red; }
+  .textshadow .navigation-main li {
+    display: inline-block;
+    *display: inline;
+    /*IE7*/
+    *zoom: 1;
+    /*IE7*/ }
+  .textshadow .navigation-main a {
+    color: transparent;
+    text-shadow: 0px 0px 2px #ffffe6;
+    text-decoration: none;
+    text-decoration: none;
+    font-style: normal; }
+    .textshadow .navigation-main a:visited {
+      color: transparent;
+      text-shadow: 0px 0px 2px #ffffe6; }
+    .textshadow .navigation-main a:hover, .textshadow .navigation-main a:focus, .textshadow .navigation-main a:active {
+      color: #ffffe6;
+      text-shadow: none;
+      text-decoration: underline; }
+  .textshadow .navigation-main li:hover > a {
+    color: #ffffe6;
+    text-shadow: none;
+    text-decoration: underline; }
+  .textshadow .navigation-main ul li:hover > ul {
+    display: block; }
+  .textshadow .navigation-main li.current_page_item a,
+  .textshadow .navigation-main li.current-menu-item a {
     text-shadow: none;
     color: #ffffe6; }
 
