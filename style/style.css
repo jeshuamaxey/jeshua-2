@@ -151,16 +151,42 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
     border-bottom: solid 1px #ffffe6; }
 
+/* page dividers */
 hr {
-  width: 90%;
+  width: 60%;
   background-color: #ffffe6;
   border: 0;
   height: 1px;
   margin-bottom: 1.5em; }
 
+.divide {
+  width: 100%;
+  height: 1px;
+  background-color: #ffffe6;
+  text-align: center;
+  margin: 30px auto 80px auto; }
+  .divide.single {
+    margin: 80px auto 80px auto; }
+  .divide .divide-char {
+    background-color: #1e1e1e;
+    position: relative;
+    top: -0.6em;
+    padding: 1.0em; }
+
+.footer-divide {
+  width: 65%;
+  margin-bottom: 30px; }
+
 /* Text elements */
 p {
   margin-bottom: 1.5em; }
+
+.amp {
+  font-family: Baskerville, "Goudy Old Style", "Palatino", "Book Antiqua", "Warnock Pro", serif;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 1.1em;
+  line-height: 1em; }
 
 ul, ol {
   margin: 0 0 1.5em 3em; }
@@ -509,23 +535,6 @@ a {
 
 /* =Content
 ----------------------------------------------- */
-.divide {
-  width: 90%;
-  margin: 30px auto 80px auto;
-  height: 1px;
-  background-color: #ffffe6;
-  text-align: center; }
-
-.footer-divide {
-  width: 65%;
-  margin-bottom: 30px; }
-
-.divide-char {
-  background-color: #1e1e1e;
-  position: relative;
-  top: -0.6em;
-  padding: 1.0em; }
-
 .hentry {
   margin: 0 0 1.5em; }
 
@@ -557,6 +566,12 @@ a {
       text-shadow: none; }
       .entry-header .entry-title a:hover {
         text-decoration: underline; }
+
+footer.entry-meta {
+  text-align: center;
+  border-top: solid 1px;
+  padding-top: 29px;
+  margin: 0 auto; }
 
 .page-links {
   clear: both;
@@ -700,7 +715,6 @@ article.comment {
 
 /* tag cloud widget */
 .widget_tag_cloud {
-  width: 75%;
   margin: 0 auto;
   text-align: center; }
 
@@ -723,7 +737,7 @@ article.comment {
 */
 @media only screen and (min-width: 1024px) {
   .hfeed {
-    width: 70%;
+    width: 921px;
     padding: 20px;
     margin: 0 auto; }
 
@@ -762,7 +776,10 @@ article.comment {
 
   /* tag cloud widget */
   .widget_tag_cloud {
-    width: 75%; } }
+    width: 75%; }
+
+  footer.entry-meta {
+    width: 80%; } }
 /*
 * TABLET SPECIFIC STYLES
 */

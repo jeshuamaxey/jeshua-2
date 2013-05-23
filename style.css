@@ -567,6 +567,12 @@ a {
       .entry-header .entry-title a:hover {
         text-decoration: underline; }
 
+footer.entry-meta {
+  text-align: center;
+  border-top: solid 1px;
+  padding-top: 29px;
+  margin: 0 auto; }
+
 .page-links {
   clear: both;
   margin: 0 0 1.5em; }
@@ -770,7 +776,10 @@ article.comment {
 
   /* tag cloud widget */
   .widget_tag_cloud {
-    width: 75%; } }
+    width: 75%; }
+
+  footer.entry-meta {
+    width: 80%; } }
 /*
 * TABLET SPECIFIC STYLES
 */
@@ -815,7 +824,10 @@ article.comment {
 
   /* tag cloud widget */
   .widget_tag_cloud {
-    width: 75%; } }
+    width: 75%; }
+
+  footer.entry-meta {
+    width: 80%; } }
 /*
 * MOBILE SPECIFIC STYLES
 */
