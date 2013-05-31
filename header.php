@@ -29,6 +29,7 @@
 <!-- syntax highlighting -->
 <link id="code-theme" current-theme=light other-theme=dark rel="stylesheet" href="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/jeshua-2-0/js/highlightjs/styles/solarized_dark.css">
 <script src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/jeshua-2-0/js/highlightjs/highlight.pack.js"></script>
+<script src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/jeshua-2-0/js/face.js" id="face"></script>
 <?php wp_head(); ?>
 </head>
 
